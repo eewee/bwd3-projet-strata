@@ -30,13 +30,20 @@ require_once "config.php";
 			<!-- One -->
 			<section id="one">
 				<header class="major">
-					<h2>BWD 3 : Initiation au PHP</h2>
+					<h2 style="margin-bottom:0;">BWD 3 : Initiation au PHP</h2>
 				</header>
+
+                <video width="100%" height="500" controls loop autoplay>
+                    <source src="videos/code.mp4" type="video/mp4">
+                    <source src="videos/code.ogg" type="video/ogg">
+                    <source src="videos/code.webm" type="video/webm">
+                    Votre navigateur ne supporte pas le format de la video.
+                </video>
+
 				<p>
-                    Le but de ce TP est d'utiliser un thème responsive existant depuis le site "HTML5 UP",<br><strong>puis ajouter du PHP</strong> sur cette page.
-                    Etape du TP :
+                    Le but de ce TP est d'utiliser un thème responsive existant depuis le site "HTML5 UP",<br><strong>puis ajouter du PHP</strong> sur cette page. Voici les étapes du TP :
                     <ul>
-                    <li>Créer un nouveau projet sur <a href="https://github.com/eewee/bwd3-projet-strata" target="_blank">GitHub.com</a> (=repository), dans le but de versionner son code.</li>
+                        <li>Créer un nouveau projet sur <a href="https://github.com/eewee/bwd3-projet-strata" target="_blank">GitHub.com</a> (=repository), dans le but de versionner son code.</li>
                         <li>Utiliser le logiciel <a href="https://www.sourcetreeapp.com/" target="_blank">SourceTree</a> pour envoyer votre code sur GitHub.com.</li>
                         <li>Utiliser <a href="https://www.mamp.info/en/" target="_blank">MAMP</a>/<a href="http://www.wampserver.com/" target="_blank">WAMP</a> pour disposer d'un serveur local sur sa machine (pour faire du PHP).</li>
                         <li>Installer le thème sur votre PC/Mac (en local).</li>
@@ -44,6 +51,7 @@ require_once "config.php";
                         <li>Ajouter des variables en PHP.</li>
                     </ul>
                 </p>
+
 				<ul class="actions">
 					<li><a href="https://github.com/eewee/bwd3-projet-strata" target="_blank" class="button">En savoir +</a></li>
 				</ul>
@@ -461,10 +469,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<li><a href="<?php echo $twitter; ?>" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
 					<li><a href="<?php echo $github; ?>" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
 					<li><a href="<?php echo $dribbble; ?>" class="icon brands fa-dribbble" target="_blank"><span class="label">Dribbble</span></a></li>
-
-                    <li><a href="<?php echo $facebook; ?>" class="icon brands fa-facebook" target="_blank"><span class="label">facebook</span></a></li>
-                    <li><a href="<?php echo $instagram; ?>" class="icon brands fa-instagram" target="_blank"><span class="label">instagram</span></a></li>
-
+                    <li><a href="<?php echo $facebook; ?>" class="icon brands fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+                    <li><a href="<?php echo $instagram; ?>" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
                     <li><a href="mailto:<?php echo $email; ?>" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
