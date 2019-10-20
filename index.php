@@ -14,14 +14,13 @@ require_once "config.php";
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body class="is-preload">
-
 		<!-- Header -->
 		<header id="header">
 			<div class="inner">
 				<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-				<h1><strong>I am Strata</strong>, a super simple<br />
-				responsive site template freebie<br />
-				crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+				<h1>
+                    <strong>Projet Strata</strong>, template HTML<br>sur lequel on va utiliser du PHP.
+                </h1>
 			</div>
 		</header>
 
@@ -31,18 +30,28 @@ require_once "config.php";
 			<!-- One -->
 			<section id="one">
 				<header class="major">
-					<h2>Ipsum lorem dolor aliquam ante commodo<br />
-					magna sed accumsan arcu neque.</h2>
+					<h2>BWD 3 : Initiation au PHP</h2>
 				</header>
-				<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+				<p>
+                    Le but de ce TP est d'utiliser un thème responsive existant depuis le site "HTML5 UP",<br><strong>puis ajouter du PHP</strong> sur cette page.
+                    Etape du TP :
+                    <ul>
+                    <li>Créer un nouveau projet sur <a href="https://github.com/eewee/bwd3-projet-strata" target="_blank">GitHub.com</a> (=repository), dans le but de versionner son code.</li>
+                        <li>Utiliser le logiciel <a href="https://www.sourcetreeapp.com/" target="_blank">SourceTree</a> pour envoyer votre code sur GitHub.com.</li>
+                        <li>Utiliser <a href="https://www.mamp.info/en/" target="_blank">MAMP</a>/<a href="http://www.wampserver.com/" target="_blank">WAMP</a> pour disposer d'un serveur local sur sa machine (pour faire du PHP).</li>
+                        <li>Installer le thème sur votre PC/Mac (en local).</li>
+                        <li>Savoir ce repérer sur une page HTML (template).</li>
+                        <li>Ajouter des variables en PHP.</li>
+                    </ul>
+                </p>
 				<ul class="actions">
-					<li><a href="#" class="button">Learn More</a></li>
+					<li><a href="https://github.com/eewee/bwd3-projet-strata" target="_blank" class="button">En savoir +</a></li>
 				</ul>
 			</section>
 
 			<!-- Two -->
 			<section id="two">
-				<h2>Recent Work</h2>
+				<h2>Réalisations</h2>
 				<div class="row">
 					<article class="col-6 col-12-xsmall work-item">
 						<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
@@ -76,7 +85,7 @@ require_once "config.php";
 					</article>
 				</div>
 				<ul class="actions">
-					<li><a href="#" class="button">Full Portfolio</a></li>
+					<li><a href="#" class="button">En savoir +</a></li>
 				</ul>
 			</section>
 
@@ -88,13 +97,13 @@ require_once "config.php";
 					<div class="col-8 col-12-small">
 						<form method="post" action="#">
 							<div class="row gtr-uniform gtr-50">
-								<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+								<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Nom" /></div>
 								<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
 								<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 							</div>
 						</form>
 						<ul class="actions">
-							<li><input type="submit" value="Send Message" /></li>
+							<li><input type="submit" value="Valider" /></li>
 						</ul>
 					</div>
 					<div class="col-4 col-12-small">
@@ -115,7 +124,7 @@ require_once "config.php";
 							<li>
 								<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
 
-								<a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a><br>
+								<!-- <a href="mailto:<?php //echo $email; ?>"><?php //echo $email; ?></a><br>-->
 
                                 <?php
                                 // Afficher un lien avec une adresse email
@@ -451,13 +460,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<footer id="footer">
 			<div class="inner">
 				<ul class="icons">
-					<li><a href="<?php echo $twitter; ?>" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="<?php echo $github; ?>" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					<li><a href="<?php echo $dribbble; ?>" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-					<li><a href="mailto:<?php echo $email; ?>" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="<?php echo $twitter; ?>" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+					<li><a href="<?php echo $github; ?>" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+					<li><a href="<?php echo $dribbble; ?>" class="icon brands fa-dribbble" target="_blank"><span class="label">Dribbble</span></a></li>
+					<li><a href="mailto:<?php echo $email; ?>" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
 				</ul>
 			</div>
 		</footer>
