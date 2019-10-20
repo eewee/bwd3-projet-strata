@@ -17,7 +17,7 @@ require_once "config.php";
 		<!-- Header -->
 		<header id="header">
 			<div class="inner">
-				<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+				<a href="#" class="image avatar"><img src="images/logo.png" alt="" /></a>
 				<h1>
                     <strong>Projet Strata</strong>, template HTML<br>sur lequel on va utiliser du PHP.
                 </h1>
@@ -112,9 +112,7 @@ require_once "config.php";
 								<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
 								<?php
                                 // Afficher : Adresse, cp, ville et pays.
-                                echo $adresse."<br>
-                                ".$cp." ".$ville."<br>
-								".$pays;
+                                echo $adresse."<br>".$cp." ".$ville."<br>".$pays;
                                 ?>
 							</li>
 							<li>
@@ -463,7 +461,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<li><a href="<?php echo $twitter; ?>" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
 					<li><a href="<?php echo $github; ?>" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
 					<li><a href="<?php echo $dribbble; ?>" class="icon brands fa-dribbble" target="_blank"><span class="label">Dribbble</span></a></li>
-					<li><a href="mailto:<?php echo $email; ?>" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+
+                    <li><a href="<?php echo $facebook; ?>" class="icon brands fa-facebook" target="_blank"><span class="label">facebook</span></a></li>
+                    <li><a href="<?php echo $instagram; ?>" class="icon brands fa-instagram" target="_blank"><span class="label">instagram</span></a></li>
+
+                    <li><a href="mailto:<?php echo $email; ?>" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
 					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
