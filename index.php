@@ -103,25 +103,37 @@ require_once "config.php";
 				<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
 				<div class="row">
 					<div class="col-8 col-12-small">
-						<form method="post" action="#">
+
+            <?php
+            // Faire le traitement du formulaire
+            if (isset($_POST) && !empty($_POST)) {
+              echo '<pre>';
+                var_dump($_POST);
+              echo '</pre>';              
+            }
+            ?>
+            
+						<form method="POST" action="#">
 							<div class="row gtr-uniform gtr-50">
 								<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Nom" /></div>
 								<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
 								<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 							</div>
-						</form>
-						<ul class="actions">
-							<li><input type="submit" value="Valider" /></li>
-						</ul>
+
+              <ul class="actions">
+                <li><input type="submit" value="Valider" /></li>
+              </ul>
+            </form>
+            
 					</div>
 					<div class="col-4 col-12-small">
 						<ul class="labeled-icons">
 							<li>
 								<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
 								<?php
-                                // Afficher : Adresse, cp, ville et pays.
-                                echo $adresse."<br>".$cp." ".$ville."<br>".$pays;
-                                ?>
+                // Afficher : Adresse, cp, ville et pays.
+                echo $adresse."<br>".$cp." ".$ville."<br>".$pays;
+                ?>
 							</li>
 							<li>
 								<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
@@ -132,10 +144,10 @@ require_once "config.php";
 
 								<!-- <a href="mailto:<?php //echo $email; ?>"><?php //echo $email; ?></a><br>-->
 
-                                <?php
-                                // Afficher un lien avec une adresse email
-                                echo "<a href='mailto:".$email."'>".$email."</a>";
-                                ?>
+                <?php
+                // Afficher un lien avec une adresse email
+                echo "<a href='mailto:".$email."'>".$email."</a>";
+                ?>
 							</li>
 						</ul>
 					</div>
