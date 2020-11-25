@@ -127,15 +127,25 @@ require_once "config.php";
             if (isset($_POST) && !empty($_POST)) {
               echo '<pre>';
                 var_dump($_POST);
-              echo '</pre>';              
+              echo '</pre>';
+              
+              //echo 'Nom : ' . $_POST['name'];
             }
             ?>
             
 						<form method="POST" action="#">
 							<div class="row gtr-uniform gtr-50">
-								<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Nom" /></div>
-								<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-								<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+								<div class="col-6 col-12-xsmall">
+                  <input type="text" name="name" id="name" placeholder="Nom" value="<?php if (isset($_POST['name'])) { echo $_POST['name']; } ?>" />
+                </div>
+                
+								<div class="col-6 col-12-xsmall">
+                  <input type="email" name="email" id="email" placeholder="Email" />
+                </div>
+                
+								<div class="col-12">
+                  <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+                </div>
 							</div>
 
               <ul class="actions">
