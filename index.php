@@ -33,12 +33,12 @@ require_once "config.php";
 					<h2 style="margin-bottom:0;">BWD 3 : Initiation au PHP</h2>
 				</header>
 
-                <video width="100%" height="500" controls loop autoplay>
-                    <source src="videos/code.mp4" type="video/mp4">
-                    <source src="videos/code.ogg" type="video/ogg">
-                    <source src="videos/code.webm" type="video/webm">
-                    Votre navigateur ne supporte pas le format de la video.
-                </video>
+        <video width="100%" height="500" controls loop autoplay>
+            <source src="videos/code.mp4" type="video/mp4">
+            <source src="videos/code.ogg" type="video/ogg">
+            <source src="videos/code.webm" type="video/webm">
+            Votre navigateur ne supporte pas le format de la video.
+        </video>
 
 				<p>
                     Le but de ce TP est d'utiliser un thème responsive existant depuis le site "HTML5 UP",<br><strong>puis ajouter du PHP</strong> sur cette page. Voici les étapes du TP :
@@ -61,11 +61,29 @@ require_once "config.php";
 			<section id="two">
 				<h2>Réalisations</h2>
 				<div class="row">
+                    
+          <?php
+          foreach ($works as $work) {
+            echo '
+            <article class="col-6 col-12-xsmall work-item">
+              <a href="images/fulls/01.jpg" class="image fit thumb">
+                <img src="'.$work['image'].'" alt="" />
+              </a>
+              
+              <h3>'.$work['title'].'</h3>
+              
+              <p>'.$work['description'].'</p>
+            </article>
+            ';
+          }
+          ?>
+                    
 					<article class="col-6 col-12-xsmall work-item">
 						<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
 						<h3>Magna sed consequat tempus</h3>
 						<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 					</article>
+          
 					<article class="col-6 col-12-xsmall work-item">
 						<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
 						<h3>Ultricies lacinia interdum</h3>
